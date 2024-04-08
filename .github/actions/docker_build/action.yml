@@ -1,0 +1,29 @@
+name: Docker Build
+description: Build Docker Image
+inputs:
+  path_dockerfile:
+    description: "Path to Dockerfile, if not in root directory"
+    required: false
+    default: "Dockerfile"
+  image_name:
+    description: "Name of the Docker image"
+    required: false
+  tag_name:
+    description: "Tag of the Docker image"
+    required: false
+runs:
+  using: composite
+  steps:
+    - run: |
+        if [ -z "${{ inputs.tag_name }}" ]; then
+          echo "TAG=$(date +%s)" >> $GITHUB_ENV
+        else
+          echo "TAG=${{ inputs.tag_name }}" >> $GITHUB_ENV
+        fi
+      shell: bash
+    - run: |
+        NAME=${{ inputs.image_name }}:$TAG
+        docker build . --file ${{ inputs.path_dockerfile }} --tag $NAME
+        echo "DOCKER_IMAGE_NAME=$NAME" >> $GITHUB_ENV
+        echo "docker_image=$NAME" >> $GITHUB_OUTPUT
+      shell: bash
