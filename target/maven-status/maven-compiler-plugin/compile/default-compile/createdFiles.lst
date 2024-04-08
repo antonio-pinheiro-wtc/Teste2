@@ -1,0 +1,7 @@
+org/acme/hibernate/orm/panache/repository/FruitRepository.class
+org/acme/hibernate/orm/panache/entity/FruitEntityResource$ErrorMapper.class
+org/acme/hibernate/orm/panache/application/Config.class
+org/acme/hibernate/orm/panache/entity/FruitEntity.class
+META-INF/panache-archive.marker
+org/acme/hibernate/orm/panache/repository/Fruit.class
+org/acme/hibernate/orm/panache/entity/FruitEntityResource.class

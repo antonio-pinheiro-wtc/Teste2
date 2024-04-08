@@ -1,0 +1,22 @@
+
+“
+java:S11924"RDefine a constant instead of duplicating this literal "Fruit with id of " 3 times.(Ä¶ëÅşÿÿÿÿJ$de8adb4c-5fdc-452d-96c6-7d6a5bbe2051
+’
+java:S11924"QDefine a constant instead of duplicating this literal " does not exist." 3 times.(Ä¶ëÅşÿÿÿÿJ$cfe31496-cea8-4ef1-9626-9212dc3080b4
+E
+java:S5411A"(Use a primitive boolean expression here.(©Ê„×8¸ÏÄë1
+˜	java:S116&"QRename this field "Config" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ËùÏûÿÿÿÿ8Œû„é1J$143f1280-88b7-437c-90ed-44f39749bdac
+ƒ
+java:S6813%"BRemove this field injection and use constructor injection instead.(Áº–üÿÿÿÿJ$6aa03202-c6bc-4674-9132-4e0e5e794065
+–
+java:S3252+"ZUse static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "listAll".(š±Û—J$7375e84e-6d32-44c2-bb94-949c0217a2e7
+œ
+java:S32522"[Use static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findById".(ÌË‘ğşÿÿÿÿJ$a9d0c268-23b5-49f5-bc1b-743720541bc7
+œ
+java:S3252S"[Use static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findById".(ÌË‘ğşÿÿÿÿJ$8d405c22-76d0-492f-9f16-262b17e6f25e
+œ
+java:S3252c"[Use static access with "io.quarkus.hibernate.orm.panache.PanacheEntityBase" for "findById".(ÌË‘ğşÿÿÿÿJ$7565d8a1-48d7-4af4-9001-7fbe6d99b21a
+Š
+java:S6813n"BRemove this field injection and use constructor injection instead.(Áº–üÿÿÿÿ8˜Œû„é1J$a458559f-613a-4655-9596-a1764ea05568
+¤
+java:S6201v"hReplace this instanceof check and cast with 'instanceof WebApplicationException webapplicationexception'(ìô›ÕJ$7dd9097d-e485-4974-b770-84dc0e5b537e

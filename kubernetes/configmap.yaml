@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: academy-configmap
+data:
+  fruit.name.uppercase.force: "false"
+  quarkus.datasource.jdbc.url: "jdbc:postgresql://localhost:5432/postgres"
