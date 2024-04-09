@@ -1,0 +1,27 @@
+name: Create PostgreSQL Container
+inputs:
+  name:
+    description: "Name of the PostgreSQL container"
+    required: true
+  port:
+    description: "Port to expose PostgreSQL"
+    required: true
+  username:
+    description: "PostgreSQL Username"
+    required: true
+  password:
+    description: "PostgreSQL Password"
+    required: true
+
+description: Create PostgreSQL Container based on the name and port received on the inputs. Deletes the previous named container.
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: |
+        CONTAINER_NAME=${{ inputs.name }}
+        PORT=${{ inputs.port }}
+        USERNAME=${{ inputs.username }}
+        PASSWORD=${{ inputs.password }}
+        docker rm -f $CONTAINER_NAME || true
+        docker run --rm -d -p $PORT:5432 -e POSTGRES_USER=$USERNAME -e POSTGRES_PASSWORD=$PASSWORD -e POSTGRES_DB=postgres --name $CONTAINER_NAME postgres
